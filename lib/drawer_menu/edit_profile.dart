@@ -62,21 +62,26 @@ class Edit_Profile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              color: Colors.grey.shade300,
+              // color: Colors.grey.shade300,
               height: 180,
-              width: 500,
+              // width: 500,
               child: Column(
                 children: [
-                  Container(
-                    padding: EdgeInsets.only(top: 15, bottom: 10),
-                    width: 110,
-                    height: 110,
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage(
-                        'assets/Anuradha.jpg',
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(top: 15, bottom: 10),
+                        width: 110,
+                        height: 110,
+                        child: CircleAvatar(
+                          backgroundImage: AssetImage(
+                            'assets/Anuradha.jpg',
+                          ),
+                          //radius: 5,
+                        ),
                       ),
-                      //radius: 5,
-                    ),
+                    ],
                   ),
                   SizedBox(
                     height: 2,
@@ -215,7 +220,7 @@ class Edit_Profile extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 16.0, right: 16),
               child: Container(
-                  width: 400,
+                  // width: 400,
                   height: 50,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6),

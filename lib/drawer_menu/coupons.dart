@@ -59,17 +59,27 @@ class Coupons_page extends StatelessWidget {
               children: [
                 Container(
                   padding: EdgeInsets.only(right: 15),
-                  child: Icon(
-                    Icons.notifications_none,
-                    size: 35,
-                    color: Colors.black,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, 'notification');
+                    },
+                    child: Icon(
+                      Icons.notifications_none,
+                      size: 35,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
                 Container(
-                  child: Icon(
-                    Icons.menu,
-                    color: Colors.black,
-                    size: 35,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, 'drawer');
+                    },
+                    child: Icon(
+                      Icons.menu,
+                      color: Colors.black,
+                      size: 35,
+                    ),
                   ),
                 )
               ],

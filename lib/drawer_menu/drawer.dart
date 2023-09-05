@@ -118,22 +118,22 @@ class DrawerBar extends StatelessWidget {
       // Handle onTap for 'Enable Location'
       Navigator.pushNamed(context, 'place');
     },
+    (BuildContext context) {
+      // Handle onTap for 'HomePage'
+      Navigator.pushNamed(context, 'confirm');
+    },
+    (BuildContext context) {
+      // Handle onTap for 'Enable Location'
+      Navigator.pushNamed(context, 'confirm');
+    },
     (BuildContext) {
       // Handle onTap for 'HomePage'
       print('Tapped on HomePage');
     },
-    (BuildContext) {
-      // Handle onTap for 'Enable Location'
-      print('Tapped on Enable Location');
-    },
-    (BuildContext) {
-      // Handle onTap for 'HomePage'
-      print('Tapped on HomePage');
-    },
-    (BuildContext) {
-      // Handle onTap for 'Enable Location'
-      print('Tapped on Enable Location');
-    },
+    // // (BuildContext) {
+    //    // Handle onTap for 'Enable Location'
+    //    print('Tapped on Enable Location');
+    //  },
 
     // Define onTap functions for other items as needed
   ];

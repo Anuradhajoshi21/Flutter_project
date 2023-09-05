@@ -123,7 +123,7 @@ class Wallet extends StatelessWidget {
                       padding:
                           const EdgeInsets.only(left: 18, right: 18, top: 18),
                       child: Container(
-                          width: 400,
+                          // width: 400,
                           height: 50,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(6),
