@@ -5,41 +5,77 @@ class Notification_Page extends StatelessWidget {
   final List<NotificationData> notificationDataList = [
     NotificationData(
       title: 'Order Delivered',
-      imagePath: 'assets/noti.png',
+      imagePath: 'noti.png',
       subtitle1:
           'Your order from Meshi Vaishnu Dhaba has been delivered. Feel free to tip the delivery partner.',
       subtitle2: '2 days ago',
     ),
     NotificationData(
       title: 'Order is on its way!',
-      imagePath: 'assets/noti.png',
+      imagePath: 'noti.png',
       subtitle1: 'It should reach your locaton shortly. Hands are\nsanitized',
       subtitle2: '3 days ago',
     ),
     NotificationData(
       title: 'Your order was delivered at your door',
-      imagePath: 'assets/noti.png',
+      imagePath: 'noti.png',
       subtitle1:
           'As requested by you, your order has been\nKept at door. Please rate your delivery experience',
       subtitle2: '3 days ago',
     ),
     NotificationData(
       title: 'Knock! Knock!',
-      imagePath: 'assets/noti.png',
+      imagePath: 'noti.png',
       subtitle1:
           'Arjun reached your location in just 16 mins.\nThey should be at your doorstep shortly. Feel free to tip them.',
       subtitle2: '15 days ago',
     ),
     NotificationData(
       title: 'Order is on its way!',
-      imagePath: 'assets/noti.png',
+      imagePath: 'noti.png',
       subtitle1:
           'It should reach your location in 20 mins. Hands are sanitized',
       subtitle2: '15 days ago',
     ),
     NotificationData(
       title: 'Arjun is your delivery partner',
-      imagePath: 'assets/noti.png',
+      imagePath: 'noti.png',
+      subtitle1: 'They are on their way to pick your order.',
+      subtitle2: '1 month ago',
+    ),
+    NotificationData(
+      title: 'Arjun is your delivery partner',
+      imagePath: 'noti.png',
+      subtitle1: 'They are on their way to pick your order.',
+      subtitle2: '1 month ago',
+    ),
+    NotificationData(
+      title: 'Arjun is your delivery partner',
+      imagePath: 'noti.png',
+      subtitle1: 'They are on their way to pick your order.',
+      subtitle2: '1 month ago',
+    ),
+    NotificationData(
+      title: 'Arjun is your delivery partner',
+      imagePath: 'noti.png',
+      subtitle1: 'They are on their way to pick your order.',
+      subtitle2: '1 month ago',
+    ),
+    NotificationData(
+      title: 'Arjun is your delivery partner',
+      imagePath: 'noti.png',
+      subtitle1: 'They are on their way to pick your order.',
+      subtitle2: '1 month ago',
+    ),
+    NotificationData(
+      title: 'Arjun is your delivery partner',
+      imagePath: 'noti.png',
+      subtitle1: 'They are on their way to pick your order.',
+      subtitle2: '1 month ago',
+    ),
+    NotificationData(
+      title: 'Arjun is your delivery partner',
+      imagePath: 'noti.png',
       subtitle1: 'They are on their way to pick your order.',
       subtitle2: '1 month ago',
     ),
@@ -54,9 +90,14 @@ class Notification_Page extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pop();
               },
-              child: Icon(
-                Icons.arrow_back,
-                color: Colors.black,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pop();
+                },
+                child: Icon(
+                  Icons.arrow_back,
+                  color: Colors.black,
+                ),
               ),
             ),
             backgroundColor: Colors.white,
@@ -71,10 +112,15 @@ class Notification_Page extends StatelessWidget {
                   children: [
                     Container(
                       padding: EdgeInsets.only(right: 15),
-                      child: Icon(
-                        Icons.notifications_none,
-                        size: 35,
-                        color: Colors.black,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, 'notification');
+                        },
+                        child: Icon(
+                          Icons.notifications_none,
+                          size: 35,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                     Container(
@@ -113,14 +159,18 @@ class Notification_Page extends StatelessWidget {
                 return ListTile(
                   leading: Image.asset(
                       notificationDataList[notificationIndex].imagePath),
-                  title: Text(
-                    notificationDataList[notificationIndex].title,
-                    style: TextStyle(fontWeight: FontWeight.w500),
+                  title: Container(
+                    margin: EdgeInsets.only(left: 7),
+                    child: Text(
+                      notificationDataList[notificationIndex].title,
+                      style: TextStyle(fontWeight: FontWeight.w500),
+                    ),
                   ),
                   subtitle: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         Text(notificationDataList[notificationIndex].subtitle1),
                         Text(notificationDataList[notificationIndex].subtitle2),

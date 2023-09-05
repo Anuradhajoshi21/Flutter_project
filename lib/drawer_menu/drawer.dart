@@ -97,9 +97,9 @@ class DrawerBar extends StatelessWidget {
       // Handle onTap for 'HomePage'
       print('Tapped on HomePage');
     },
-    (BuildContext) {
+    (BuildContext context) {
       // Handle onTap for 'Enable Location'
-      print('Tapped on Enable Location');
+      Navigator.pushNamed(context, 'add_card');
     },
     (BuildContext) {
       // Handle onTap for 'HomePage'
@@ -110,9 +110,9 @@ class DrawerBar extends StatelessWidget {
       Navigator.pushNamed(context, 'editprofile');
       // print('Tapped on Enable Location');
     },
-    (BuildContext) {
+    (BuildContext context) {
       // Handle onTap for 'HomePage'
-      print('Tapped on HomePage');
+      Navigator.pushNamed(context, 'my_addresses');
     },
     (BuildContext context) {
       // Handle onTap for 'Enable Location'
@@ -193,7 +193,7 @@ class DrawerBar extends StatelessWidget {
                             'Version 1.32',
                             style: TextStyle(
                                 fontWeight: FontWeight.w400,
-                                color: Colors.white),
+                                color: Colors.grey),
                           )
                         ],
                       )

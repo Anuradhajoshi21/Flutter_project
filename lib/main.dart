@@ -3,6 +3,7 @@ import 'package:eatsome_food/all_pages/offerpage/offer.dart';
 import 'package:eatsome_food/all_pages/page1.dart';
 import 'package:eatsome_food/cartpage/cart.dart';
 import 'package:eatsome_food/drawer_menu/Setting_add_place.dart';
+import 'package:eatsome_food/drawer_menu/add_card.dart';
 import 'package:eatsome_food/drawer_menu/confirm_order.dart';
 import 'package:eatsome_food/drawer_menu/coupons.dart';
 import 'package:eatsome_food/drawer_menu/dominos_pizza_page.dart';
@@ -40,6 +41,8 @@ void main() {
       'dominos': (context) => Dominos(),
       'place': (context) => Place(),
       'confirm': (context) => ConfirmOrder(),
+      'add_card': (context) => AddCard(),
+      'my_addresses': (context) => Place(),
     },
   ));
 }
