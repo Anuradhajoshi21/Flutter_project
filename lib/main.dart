@@ -13,7 +13,7 @@ import 'package:eatsome_food/drawer_menu/wallet.dart';
 import 'package:eatsome_food/home_screens.dart';
 import 'package:flutter/material.dart';
 
-import 'all_pages/DeliveryPage/delivery.dart';
+import 'all_pages/DeliveryPage/Delivery_page_Apbar/delivery.dart';
 import 'drawer_menu/edit_profile.dart';
 
 void main() {

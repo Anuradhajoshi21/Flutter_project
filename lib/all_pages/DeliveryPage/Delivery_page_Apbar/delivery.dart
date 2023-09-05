@@ -2,8 +2,8 @@ import 'package:eatsome_food/all_pages/DeliveryPage/body_components/middle_compo
 import 'package:eatsome_food/all_pages/DeliveryPage/body_components/top_component.dart';
 import 'package:flutter/material.dart';
 
-import 'body_components/last_component..dart';
-import 'myAppBar.dart';
+import '../body_components/last_component..dart';
+import 'my_app_bar.dart';
 import 'myflexibleappbar.dart';
 
 class DeliveryPage extends StatefulWidget {
