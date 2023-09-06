@@ -36,9 +36,14 @@ class Dominos extends StatelessWidget {
                 children: [
                   WidgetSpan(
                     child: Center(
-                      child: Icon(
-                        Icons.local_offer,
-                        color: Colors.black54,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, 'offer');
+                        },
+                        child: Icon(
+                          Icons.local_offer,
+                          color: Colors.black54,
+                        ),
                       ),
                     ),
                   ),

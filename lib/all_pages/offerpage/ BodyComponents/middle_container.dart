@@ -130,9 +130,14 @@ class ItemsWidget extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ),
-                    Icon(
-                      Icons.arrow_forward_outlined,
-                      color: Colors.white,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, 'offer');
+                      },
+                      child: Icon(
+                        Icons.arrow_forward_outlined,
+                        color: Colors.white,
+                      ),
                     ),
                   ]),
                 ]),

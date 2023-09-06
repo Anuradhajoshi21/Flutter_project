@@ -5,22 +5,22 @@ class Top_container extends StatelessWidget {
 
   final List<DishesData> dishesDataList = [
     DishesData(
-      image: 'd9.png',
+      image: 'assets/d9.png',
       title: 'Sweets',
       duration: '33 mins',
     ),
     DishesData(
-      image: 'd1.png',
+      image: 'assets/d1.png',
       title: 'Samosa',
       duration: '32 mins',
     ),
     DishesData(
-      image: 'd4.png',
+      image: 'assets/d4.png',
       title: 'Pizza',
       duration: '30 mins',
     ),
     DishesData(
-      image: 'd5.png',
+      image: 'assets/d5.png',
       title: 'Noddles',
       duration: '23 mins',
     ),
@@ -42,7 +42,7 @@ class Top_container extends StatelessWidget {
                   ListTile(
                     leading: const Icon(
                       Icons.percent_outlined,
-                      size: 37,
+                      size: 30,
                     ),
                     title: const Text(
                       "Minimum 50% OFF",
@@ -51,7 +51,9 @@ class Top_container extends StatelessWidget {
                     ),
                     subtitle: const Text("and other amazing offers too"),
                     trailing: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, 'search');
+                      },
                       child: const Text("See all"),
                     ),
                   )
@@ -73,7 +75,7 @@ class Top_container extends StatelessWidget {
                   height: 150,
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset("corner.jpeg")),
+                      child: Image.asset("assets/corner.jpeg")),
                 ),
                 Container(
                   decoration:
@@ -82,7 +84,7 @@ class Top_container extends StatelessWidget {
                   height: 150,
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset("p3.jpeg")),
+                      child: Image.asset("assets/p3.jpeg")),
                 ),
                 Container(
                   decoration:
@@ -91,7 +93,7 @@ class Top_container extends StatelessWidget {
                   height: 150,
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset("p4.jpeg")),
+                      child: Image.asset("assets/p4.jpeg")),
                 ),
                 Container(
                   decoration:
@@ -100,7 +102,7 @@ class Top_container extends StatelessWidget {
                   height: 150,
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset("p5.jpeg")),
+                      child: Image.asset("assets/p5.jpeg")),
                 ),
                 Container(
                   decoration:
@@ -109,14 +111,14 @@ class Top_container extends StatelessWidget {
                   height: 100,
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset("p6.jpeg")),
+                      child: Image.asset("assets/p6.jpeg")),
                 ),
                 Container(
                   padding: EdgeInsets.all(10),
                   height: 100,
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset("p3.jpeg")),
+                      child: Image.asset("assets/p3.jpeg")),
                 ),
               ],
             ),
@@ -165,7 +167,9 @@ class DishesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.pushNamed(context, 'search');
+      },
       child: Container(
         width: 200, // Increase width to provide more space
         color: Colors.white,

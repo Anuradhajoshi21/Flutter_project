@@ -36,7 +36,9 @@ class Top_Part extends StatelessWidget {
                         height: 130,
                         color: Colors.white,
                         child: GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context, 'search');
+                          },
                           child: SizedBox(
                             width: 100,
                             child: Column(children: [
@@ -93,7 +95,9 @@ class Top_Part extends StatelessWidget {
                         height: 130,
                         color: Colors.white,
                         child: GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context, 'search');
+                          },
                           child: SizedBox(
                             width: 120,
                             child: Column(children: [
@@ -203,7 +207,9 @@ class Top_Part extends StatelessWidget {
                         height: 130,
                         color: Colors.white,
                         child: GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.pushNamed(context, 'search');
+                          },
                           child: SizedBox(
                             width: 120,
                             child: Column(children: [
@@ -267,7 +273,9 @@ class Top_Part extends StatelessWidget {
                       height: 130,
                       color: Colors.white,
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, 'search');
+                        },
                         child: SizedBox(
                           width: 120,
                           child: Column(children: [
@@ -321,7 +329,9 @@ class Top_Part extends StatelessWidget {
                       height: 130,
                       color: Colors.white,
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, 'search');
+                        },
                         child: SizedBox(
                           width: 120,
                           child: Column(children: [
@@ -375,7 +385,9 @@ class Top_Part extends StatelessWidget {
                       height: 130,
                       color: Colors.white,
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, 'search');
+                        },
                         child: SizedBox(
                           width: 120,
                           child: Column(children: [
@@ -429,7 +441,9 @@ class Top_Part extends StatelessWidget {
                       height: 130,
                       color: Colors.white,
                       child: GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, 'search');
+                        },
                         child: SizedBox(
                           width: 120,
                           child: Column(children: [

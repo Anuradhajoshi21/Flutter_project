@@ -1,3 +1,4 @@
+import 'package:eatsome_food/all_pages/DeliveryPage/Other_pages/search_pizza.dart';
 import 'package:eatsome_food/all_pages/notofications.dart';
 import 'package:eatsome_food/all_pages/offerpage/offer.dart';
 import 'package:eatsome_food/all_pages/page1.dart';
@@ -10,7 +11,9 @@ import 'package:eatsome_food/drawer_menu/dominos_pizza_page.dart';
 import 'package:eatsome_food/drawer_menu/drawer.dart';
 import 'package:eatsome_food/drawer_menu/enable_location.dart';
 import 'package:eatsome_food/drawer_menu/notification_setting.dart';
+import 'package:eatsome_food/drawer_menu/order_details.dart';
 import 'package:eatsome_food/drawer_menu/setting.dart';
+import 'package:eatsome_food/drawer_menu/support.dart';
 import 'package:eatsome_food/drawer_menu/wallet.dart';
 import 'package:eatsome_food/home_screens.dart';
 import 'package:flutter/material.dart';
@@ -43,6 +46,9 @@ void main() {
       'confirm': (context) => ConfirmOrder(),
       'add_card': (context) => AddCard(),
       'my_addresses': (context) => Place(),
+      'order_details': (context) => Order_Details(),
+      'support': (context) => Support(),
+      'search': (context) => ZomatoApp()
     },
   ));
 }
@@ -83,7 +89,7 @@ class _SplashScreenState extends State<SplashScreen> {
             children: <Widget>[
               // Your splash screen content, such as a logo or animation, goes here
               Image.asset(
-                'assets/logo.png',
+                'noti.png',
                 scale: 2,
               ), // Replace with your image
 

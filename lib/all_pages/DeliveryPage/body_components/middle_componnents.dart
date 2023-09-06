@@ -86,7 +86,9 @@ class DishesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.pushNamed(context, 'search');
+      },
       child: Container(
         width: 90,
         color: Colors.white,

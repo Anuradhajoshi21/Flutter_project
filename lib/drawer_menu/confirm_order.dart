@@ -85,7 +85,7 @@ class ConfirmOrder extends StatelessWidget {
                   margin: EdgeInsets.all(25),
                   child: ElevatedButton(
                     child: Text(
-                      'Continue to shopping',
+                      'Continue to Ordering',
                       style: TextStyle(fontSize: 20.0),
                     ),
                     // color: Colors.blue.shade900,
